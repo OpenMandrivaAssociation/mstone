@@ -1,6 +1,6 @@
 %define name	mstone
 %define version 4.9.4
-%define release %mkrel 2
+%define release %mkrel 3
 
 %define _requires_exceptions /bin/ksh
 
