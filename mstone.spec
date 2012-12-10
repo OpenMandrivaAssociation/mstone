@@ -52,3 +52,28 @@ rm -rf %{buildroot}
 %{_datadir}/mstone
 %config(noreplace) %{_sysconfdir}/mstone
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 4.9.4-4mdv2011.0
++ Revision: 620412
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 4.9.4-3mdv2010.0
++ Revision: 430109
+- rebuild
+
+* Thu Sep 18 2008 Guillaume Rousse <guillomovitch@mandriva.org> 4.9.4-2mdv2009.0
++ Revision: 285751
+- skip ksh dependencies
+
+* Thu Sep 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 4.9.4-1mdv2009.0
++ Revision: 283928
+- import mstone
+
+
+* Thu Sep 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 4.9.4-1mdv2009.0
+- first mdv release
+
+* Fri Dec 14 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.2-0.%%{rc}.1mdv2008.1
+- first mdv release
