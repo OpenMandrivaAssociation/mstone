@@ -1,19 +1,14 @@
-%define name	mstone
-%define version 4.9.4
-%define release %mkrel 4
+%define __noautoreq /bin/ksh
 
-%define _requires_exceptions /bin/ksh
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		mstone
+Version:	4.9.4
+Release:	5
 Summary:	Mail protocols benchmark framework
 License:	GPL
 Group:		Networking/Other
 URL:		http://mstone.sourceforge.net/
 Source:     http://downloads.sourceforge.net/mstone/mstone+docs-%{version}.tar.gz
 BuildRequires: cmake
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Mstone is a multi-protocol stress and performance measurement tool. Mstone can
@@ -23,6 +18,7 @@ duration of the test.
 
 %prep
 %setup -q
+find . -type f -exec chmod a+r {} \;
 
 %build
 %cmake 
@@ -41,11 +37,7 @@ install -m 755 bin/* %{buildroot}%{_datadir}/%{name}/bin
 install -m 644 data/* %{buildroot}%{_datadir}/%{name}/data
 install -m 644 conf/* %{buildroot}%{_sysconfdir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc INSTALL.txt LICENSE  LICENSE.npl NEWS.txt README.txt doc/*
 %{_bindir}/mailclient
 %{_bindir}/getdist
