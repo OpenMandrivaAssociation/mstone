@@ -2,7 +2,7 @@
 
 Name:		mstone
 Version:	4.9.4
-Release:	5
+Release:	6
 Summary:	Mail protocols benchmark framework
 License:	GPL
 Group:		Networking/Other
