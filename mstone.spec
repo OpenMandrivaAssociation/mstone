@@ -6,7 +6,7 @@ Release:	6
 Summary:	Mail protocols benchmark framework
 License:	GPL
 Group:		Networking/Other
-URL:		http://mstone.sourceforge.net/
+URL:		https://mstone.sourceforge.net/
 Source:     http://downloads.sourceforge.net/mstone/mstone+docs-%{version}.tar.gz
 BuildRequires: cmake
 
